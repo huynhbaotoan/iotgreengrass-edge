@@ -1,0 +1,18 @@
+---
+services:
+  aws.greengrass.Nucleus:
+    version: "2.12.6"
+  aws.greengrass.FleetProvisioningByClaim:
+    configuration:
+      rootPath: "/greengrass/v2"
+      awsRegion: "region_REPLACED"
+      iotDataEndpoint: "iotDataEndpoint_REPLACED"
+      iotCredentialEndpoint: "iotCredentialEndpoint_REPLACED"
+      iotRoleAlias: "TokenExchangeRoleAlias_REPLACED"
+      provisioningTemplate: "FleetProvisionTemplate_REPLACED"
+      claimCertificatePath: "/greengrass/v2/claim-certs/claim_REPLACED.pem.crt"
+      claimCertificatePrivateKeyPath: "/greengrass/v2/claim-certs/claim_REPLACED.private.pem.key"
+      rootCaPath: "/greengrass/v2/AmazonRootCA1.pem"
+      templateParameters:
+        ThingName: "device-name"
+        ThingGroupName: "device-group-name"

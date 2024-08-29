@@ -1,4 +1,4 @@
-# IoT Management System with IoT Greengrass in Edge devices
+# Fleet Provisioning with IoT Greengrass in Jetson Edge device
 
 ## Setup Jetson Edge Device
 
@@ -26,7 +26,7 @@ Replace these values below in `config.yaml`
 - Get the thing group name and replace `device-group-name`
 - Give the device name with `device-name`
 
-In the future, this file can be generated from the backend which will combine with provisioning validation Lambda.
+In the future, this file can be generated from the backend which will combine with pre-provisioning hook in Lambda.
 
 ## Prepare USB
 
@@ -55,3 +55,8 @@ In the future, this file can be generated from the backend which will combine wi
     chmod +x setup.sh
     ./setup.sh
 ```
+
+## References
+- https://github.com/aws-greengrass/aws-greengrass-fleet-provisioning-by-claim
+- https://docs.aws.amazon.com/iot/latest/developerguide/pre-provisioning-hook.html
+- https://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provisioning.html
